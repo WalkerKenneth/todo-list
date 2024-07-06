@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DUAD To-Do List</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav>
+        <h1>DUAD To-Do List</h1>
+        <button id="logout">Logout</button>
+    </nav>
+    <div id="app">
+        <div id="login-form">
+            <h2>Login</h2>
+            <form id="login">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div id="todo-list" style="display: none;">
+            <h2>My Tasks</h2>
+            <form id="new-todo">
+                <input type="text" id="todo-text" placeholder="New task" required>
+                <button type="submit">Add</button>
+            </form>
+            <div id="filters">
+                <button id="all">All</button>
+                <button id="completed">Completed</button>
+                <button id="incomplete">Incomplete</button>
+            </div>
+            <ul id="todos"></ul>
+        </div>
+    </div>
+    <script src="js/auth.js"></script>
+    <script src="js/todo.js"></script>
+</body>
+
+</html>
